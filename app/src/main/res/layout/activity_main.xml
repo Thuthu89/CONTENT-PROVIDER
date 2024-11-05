@@ -1,42 +1,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#E0F7FA"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
-
-    <!-- TextView để hiển thị tên -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NGUYỄN THỊ THU"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btnReadMessages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#D71D5C"
-        android:text="Hiển thị"
+        android:backgroundTint="#80DEEA"
+        android:text="Hiển thị tin nhắn"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:padding="12dp"
         android:layout_gravity="center"
-        android:elevation="8dp"
-        android:drawablePadding="8dp" />
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnReadContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4DD0E1"
+        android:text="Hiển thị danh bạ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnReadCallLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#26C6DA"
+        android:text="Hiển thị lịch sử cuộc gọi"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Thị Thu"
+        android:textColor="#00838F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
 
     <ListView
         android:id="@+id/listViewMessages"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:divider="#CCCCCC"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:divider="#B2EBF2"
         android:dividerHeight="1dp"
-        android:background="#FFEB64"
-        android:padding="8dp"/>
+        android:padding="8dp" />
+
 </LinearLayout>
